@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>video/audio</title>
+  <link rel="stylesheet" href="in.css">
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- video Contoller -->
+      <div>
+        <h1>Video controller</h1>
+          <video id="vid1" controls>
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.ogg" type="video/ogg">
+          </video>
+          <br>
+           <button onclick="play()">play</button>
+           <button onclick="pause()">pause</button>
+           <script>
+
+                  /*video  */
+             var Video=document.getElementById("vid1");
+               function play(){
+                 Video.play();
+               }
+               function pause(){
+                   Video.pause();
+               }
+           </script>
+      </div>
+
+      <!--audio controller   -->
+         <div>
+           <h1>Audio controller</h1>
+           <audio id="aud1" controls>
+             <source src="audio.mp3" type="audio/mp3">
+           </audio>
+           <br>
+            <button onclick="Play()">play</button>
+            <button onclick="Pause()">pause</button>
+            <script>
+                             /*audio*/
+                             var Audio=document.getElementById("aud1");
+                               function Play(){
+                                 Audio.play();
+                               }
+                               function Pause(){
+                                   Audio.pause();
+                               }
+
+                       </script>
+         </div>
+</div>
+  </body>
+</html>
